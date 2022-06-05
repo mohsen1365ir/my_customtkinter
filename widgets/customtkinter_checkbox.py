@@ -361,7 +361,6 @@ class CTkCheckBox(tkinter.Frame):
     def textvariable_callback(self, var_name, index, mode):
         self.set_text(self.textvariable.get())
         
-
     def toggle(self, event=0):
         if self.state == tkinter.NORMAL:
             if self.check_state is True:
@@ -377,7 +376,6 @@ class CTkCheckBox(tkinter.Frame):
                 self.variable_callback_blocked = False
 
             if self.function is not None:
-                print('toggle')
                 self.function()
 
            
